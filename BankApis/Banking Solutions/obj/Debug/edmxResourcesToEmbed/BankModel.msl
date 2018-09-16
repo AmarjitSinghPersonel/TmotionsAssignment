@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="VanillaBankModelStoreContainer" CdmEntityContainer="VanillaBankEntities">
+    <EntitySetMapping Name="BankTransactions">
+      <EntityTypeMapping TypeName="VanillaBankModel.BankTransaction">
+        <MappingFragment StoreEntitySet="BankTransactions">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="AccountNo" ColumnName="AccountNo" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="TransType" ColumnName="TransType" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="tstamp" ColumnName="tstamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SPBalance" FunctionName="VanillaBankModel.Store.SPBalance" />
+    <FunctionImportMapping FunctionImportName="SpDeposit" FunctionName="VanillaBankModel.Store.SpDeposit" />
+    <FunctionImportMapping FunctionImportName="SpWithdraw" FunctionName="VanillaBankModel.Store.SpWithdraw" />
+  </EntityContainerMapping>
+</Mapping>

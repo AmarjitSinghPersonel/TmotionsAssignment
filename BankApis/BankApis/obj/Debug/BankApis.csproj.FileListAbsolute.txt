@@ -1,0 +1,22 @@
+c:\users\iamde\source\repos\BankApis\BankApis\bin\BankApis.dll.config
+c:\users\iamde\source\repos\BankApis\BankApis\bin\BankApis.dll
+c:\users\iamde\source\repos\BankApis\BankApis\bin\BankApis.pdb
+c:\users\iamde\source\repos\BankApis\BankApis\obj\Debug\BankApis.csprojAssemblyReference.cache
+c:\users\iamde\source\repos\BankApis\BankApis\obj\Debug\BankApis.csproj.CoreCompileInputs.cache
+c:\users\iamde\source\repos\BankApis\BankApis\obj\Debug\BankApis.dll
+c:\users\iamde\source\repos\BankApis\BankApis\obj\Debug\BankApis.pdb
+D:\AmarjitGitHub\TmotionsAssignment\BankApis\BankApis\bin\BankApis.dll.config
+D:\AmarjitGitHub\TmotionsAssignment\BankApis\BankApis\bin\BankApis.dll
+D:\AmarjitGitHub\TmotionsAssignment\BankApis\BankApis\bin\BankApis.pdb
+D:\AmarjitGitHub\TmotionsAssignment\BankApis\BankApis\bin\Banking Solutions.dll
+D:\AmarjitGitHub\TmotionsAssignment\BankApis\BankApis\bin\EntityFramework.dll
+D:\AmarjitGitHub\TmotionsAssignment\BankApis\BankApis\bin\EntityFramework.SqlServer.dll
+D:\AmarjitGitHub\TmotionsAssignment\BankApis\BankApis\bin\Banking Solutions.pdb
+D:\AmarjitGitHub\TmotionsAssignment\BankApis\BankApis\bin\Banking Solutions.dll.config
+D:\AmarjitGitHub\TmotionsAssignment\BankApis\BankApis\bin\EntityFramework.xml
+D:\AmarjitGitHub\TmotionsAssignment\BankApis\BankApis\bin\EntityFramework.SqlServer.xml
+D:\AmarjitGitHub\TmotionsAssignment\BankApis\BankApis\obj\Debug\BankApis.csprojAssemblyReference.cache
+D:\AmarjitGitHub\TmotionsAssignment\BankApis\BankApis\obj\Debug\BankApis.csproj.CoreCompileInputs.cache
+D:\AmarjitGitHub\TmotionsAssignment\BankApis\BankApis\obj\Debug\BankApis.csproj.CopyComplete
+D:\AmarjitGitHub\TmotionsAssignment\BankApis\BankApis\obj\Debug\BankApis.dll
+D:\AmarjitGitHub\TmotionsAssignment\BankApis\BankApis\obj\Debug\BankApis.pdb

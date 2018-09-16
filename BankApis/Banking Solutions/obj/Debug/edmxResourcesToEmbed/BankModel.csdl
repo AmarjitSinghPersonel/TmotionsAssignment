@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VanillaBankModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="BankTransaction">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AccountNo" Type="Int32" />
+    <Property Name="Amount" Type="Double" />
+    <Property Name="TransType" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="Currency" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="tstamp" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="VanillaBankEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BankTransactions" EntityType="Self.BankTransaction" />
+    <FunctionImport Name="SPBalance" ReturnType="Collection(Double)">
+      <Parameter Name="accNo" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SpDeposit">
+      <Parameter Name="accNo" Mode="In" Type="Int32" />
+      <Parameter Name="amt" Mode="In" Type="Double" />
+      <Parameter Name="curr" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SpWithdraw">
+      <Parameter Name="accNo" Mode="In" Type="Int32" />
+      <Parameter Name="amt" Mode="In" Type="Double" />
+      <Parameter Name="curr" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

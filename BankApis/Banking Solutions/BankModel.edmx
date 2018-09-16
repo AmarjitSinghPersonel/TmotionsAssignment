@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="VanillaBankModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="BankTransactions">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AccountNo" Type="int" />
+          <Property Name="Amount" Type="float" />
+          <Property Name="TransType" Type="varchar" MaxLength="2" />
+          <Property Name="Currency" Type="varchar" MaxLength="3" />
+          <Property Name="tstamp" Type="datetime" />
+        </EntityType>
+        <Function Name="SPBalance" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="accNo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SpDeposit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="accNo" Type="int" Mode="In" />
+          <Parameter Name="amt" Type="float" Mode="In" />
+          <Parameter Name="curr" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SpWithdraw" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="accNo" Type="int" Mode="In" />
+          <Parameter Name="amt" Type="float" Mode="In" />
+          <Parameter Name="curr" Type="varchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="VanillaBankModelStoreContainer">
+          <EntitySet Name="BankTransactions" EntityType="Self.BankTransactions" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="VanillaBankModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="BankTransaction">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AccountNo" Type="Int32" />
+          <Property Name="Amount" Type="Double" />
+          <Property Name="TransType" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Currency" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="tstamp" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="VanillaBankEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="BankTransactions" EntityType="Self.BankTransaction" />
+          <FunctionImport Name="SPBalance" ReturnType="Collection(Double)">
+          <Parameter Name="accNo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SpDeposit">
+            <Parameter Name="accNo" Mode="In" Type="Int32" />
+            <Parameter Name="amt" Mode="In" Type="Double" />
+            <Parameter Name="curr" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SpWithdraw">
+            <Parameter Name="accNo" Mode="In" Type="Int32" />
+            <Parameter Name="amt" Mode="In" Type="Double" />
+            <Parameter Name="curr" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="VanillaBankModelStoreContainer" CdmEntityContainer="VanillaBankEntities">
+          <EntitySetMapping Name="BankTransactions">
+            <EntityTypeMapping TypeName="VanillaBankModel.BankTransaction">
+              <MappingFragment StoreEntitySet="BankTransactions">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="AccountNo" ColumnName="AccountNo" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="TransType" ColumnName="TransType" />
+                <ScalarProperty Name="Currency" ColumnName="Currency" />
+                <ScalarProperty Name="tstamp" ColumnName="tstamp" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="SPBalance" FunctionName="VanillaBankModel.Store.SPBalance" />
+          <FunctionImportMapping FunctionImportName="SpDeposit" FunctionName="VanillaBankModel.Store.SpDeposit" />
+          <FunctionImportMapping FunctionImportName="SpWithdraw" FunctionName="VanillaBankModel.Store.SpWithdraw" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

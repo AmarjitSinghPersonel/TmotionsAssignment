@@ -1,0 +1,12 @@
+D:\AmarjitGitHub\TmotionsAssignment\BankApis\Banking Solutions\bin\Debug\Banking Solutions.dll.config
+D:\AmarjitGitHub\TmotionsAssignment\BankApis\Banking Solutions\bin\Debug\Banking Solutions.dll
+D:\AmarjitGitHub\TmotionsAssignment\BankApis\Banking Solutions\bin\Debug\Banking Solutions.pdb
+D:\AmarjitGitHub\TmotionsAssignment\BankApis\Banking Solutions\bin\Debug\EntityFramework.dll
+D:\AmarjitGitHub\TmotionsAssignment\BankApis\Banking Solutions\bin\Debug\EntityFramework.SqlServer.dll
+D:\AmarjitGitHub\TmotionsAssignment\BankApis\Banking Solutions\bin\Debug\EntityFramework.xml
+D:\AmarjitGitHub\TmotionsAssignment\BankApis\Banking Solutions\bin\Debug\EntityFramework.SqlServer.xml
+D:\AmarjitGitHub\TmotionsAssignment\BankApis\Banking Solutions\obj\Debug\Banking Solutions.csprojAssemblyReference.cache
+D:\AmarjitGitHub\TmotionsAssignment\BankApis\Banking Solutions\obj\Debug\Banking Solutions.csproj.CoreCompileInputs.cache
+D:\AmarjitGitHub\TmotionsAssignment\BankApis\Banking Solutions\obj\Debug\Banking Solutions.csproj.CopyComplete
+D:\AmarjitGitHub\TmotionsAssignment\BankApis\Banking Solutions\obj\Debug\Banking Solutions.dll
+D:\AmarjitGitHub\TmotionsAssignment\BankApis\Banking Solutions\obj\Debug\Banking Solutions.pdb
