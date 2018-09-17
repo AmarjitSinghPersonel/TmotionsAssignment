@@ -27,7 +27,7 @@ namespace BankApis
         public string Withdraw(int AccNo, int Amt)
         {
             var i = bankSol.Withdraw(AccNo, Amt);
-            return string.Format("You entered: {0}", AccNo);
+            return string.Format("You entered: {0}", i);
         }
 
         public string GetData(int value)
