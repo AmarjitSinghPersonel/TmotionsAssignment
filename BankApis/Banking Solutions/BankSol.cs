@@ -8,43 +8,43 @@ namespace Banking_Solutions
     public class BankSol
     {
         VanillaBankEntities VanillaBankEntities = new VanillaBankEntities();
-        public String GetBalance(int accNo)
+        public String GetBalance(int AccountNumber)
         {
-            var i = VanillaBankEntities.SPBalance(accNo).FirstOrDefault();
+            var Result = VanillaBankEntities.SPBalance(AccountNumber).FirstOrDefault();
             //Conversion of currency will be handeled here.
-            return i.ToString();
+            return Result.ToString();
         }
-        public String Deposit(int accNo,double amt)
+        public String Deposit(int AccountNumber, double Amount, string Currency)
         {
             try
             {
-                var i = VanillaBankEntities.SpDeposit(accNo, amt, "Inr");
-                if (i == 1) { return "Amount of " + amt + " credited successfully to the account no. " + accNo + "."; }
+                var Status = VanillaBankEntities.SpDeposit(AccountNumber, Amount, Currency);
+                if (Status == 1) { return "Amount of " + Amount + " credited successfully to the account no. " + AccountNumber + "."; }
                 else { return "Something went wrong."; }
             }
             catch (Exception ex)
             {
-
                 return ex.InnerException.Message;
             }
-            
+
         }
-        public String Withdraw(int accNo,double amt)
+        //Withdraw Method will check the current balance and withdraw the money only then
+        //In case there aren't enough funds SP will return the respective output
+        public String Withdraw(int AccountNumber, double Amount, string Currency = "Inr")
         {
             try
             {
-                var i = VanillaBankEntities.SpWithdraw(accNo, amt, "Inr");
-                if (i == 1) { return "Amount of " + amt + " debited successfully to the account no. " + accNo + "."; }
+                var Status = VanillaBankEntities.SpWithdraw(AccountNumber, Amount, Currency);
+                if (Status == 1) { return "Amount of " + Amount + " debited successfully to the account no. " + AccountNumber + "."; }
                 else { return "Something went wrong."; }
-                
+
             }
             catch (Exception ex)
             {
-
-               return ex.InnerException.Message;
+                return ex.InnerException.Message;
             }
-           
-            
+
+
         }
     }
 }

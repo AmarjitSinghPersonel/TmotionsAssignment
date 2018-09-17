@@ -8,36 +8,24 @@ using System.Text;
 
 namespace BankApis
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
-    // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
-    public class Bank : IService1
+    public class Bank : IBankApi
     {
         Banking_Solutions.BankSol bankSol = new Banking_Solutions.BankSol();
-       
-        public string GetBalance(int accNo)
-        {
-           var bal = bankSol.GetBalance(accNo);
-            return string.Format("Your current balance is: {0}", bal);
-        }
-        public string Deposit(int AccNo,int Amt)
-        {
-            var i = bankSol.Deposit(AccNo, Amt);
-            return string.Format(i);
-        }
-        public string Withdraw(int AccNo, int Amt)
-        {
-            var i = bankSol.Withdraw(AccNo, Amt);
-            return string.Format("You entered: {0}", i);
-        }
 
-        public string GetData(int value)
+        public string GetBalance(int AccountNumber)
         {
-            throw new NotImplementedException();
+            var Balance = bankSol.GetBalance(AccountNumber);
+            return string.Format("Your current balance is: {0}", Balance);
         }
-
-        public CompositeType GetDataUsingDataContract(CompositeType composite)
+        public string Deposit(int AccountNumber, int Amount, string Currency = "Inr")
         {
-            throw new NotImplementedException();
+            var Status = bankSol.Deposit(AccountNumber, Amount, Currency);
+            return Status;
+        }
+        public string Withdraw(int AccountNumber, int Amount)
+        {
+            var Status = bankSol.Withdraw(AccountNumber, Amount);
+            return Status;
         }
     }
 }

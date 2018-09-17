@@ -11,6 +11,8 @@
     <script type="text/javascript" src="jquery-1.4.4.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
+            // I had put the localhost URL here where I hosted my application 
+            // All your svc url where you have hosted the services to run this on machine
             var url = 'http://localhost:52582/Bank.svc';
             $('#btnBal').click(function () {
                 $.ajax({

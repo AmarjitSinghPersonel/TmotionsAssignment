@@ -10,21 +10,14 @@ namespace BankApis
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IService1" in both code and config file together.
     [ServiceContract]
-    public interface IService1
-    {
-       
+    public interface IBankApi
+    {      
         [OperationContract]
-        
-        string GetData(int value);
+        string GetBalance(int AccountNumber);
         [OperationContract]
-        string GetBalance(int accNo);
+        string Deposit(int AccountNumber, int Amount, string Currency = "Inr");
         [OperationContract]
-        string Deposit(int AccNo, int Amt);
-        [OperationContract]
-        string Withdraw(int AccNo, int Amt);
-        [OperationContract]
-        CompositeType GetDataUsingDataContract(CompositeType composite);
-
+        string Withdraw(int AccountNumber, int Amount);
         // TODO: Add your service operations here
     }
 

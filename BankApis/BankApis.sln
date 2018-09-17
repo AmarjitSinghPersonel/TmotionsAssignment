@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankApis", "BankApis\BankAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banking Solutions", "Banking Solutions\Banking Solutions.csproj", "{E5A4141C-8703-4933-81FE-8EC5091F2E61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankWebApi", "BankWebApi\BankWebApi.csproj", "{824D56C3-1D49-45C0-9B29-84E9ED0C73EF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankWebApi(Optional)", "BankWebApi\BankWebApi(Optional).csproj", "{824D56C3-1D49-45C0-9B29-84E9ED0C73EF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankUI", "BankUI\BankUI.csproj", "{E16BB55C-6853-4390-9591-DD65912A8A1F}"
 EndProject
