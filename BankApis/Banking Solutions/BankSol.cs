@@ -11,6 +11,7 @@ namespace Banking_Solutions
         public String GetBalance(int accNo)
         {
             var i = VanillaBankEntities.SPBalance(accNo).FirstOrDefault();
+            //Conversion of currency will be handeled here.
             return i.ToString();
         }
         public String Deposit(int accNo,double amt)

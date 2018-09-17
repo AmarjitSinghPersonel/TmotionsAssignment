@@ -1,0 +1,9 @@
+C:\Users\deepak.dhiman\Documents\GitHub\TmotionsAssignment\BankApis\BankUI\bin\BankUI.dll.config
+C:\Users\deepak.dhiman\Documents\GitHub\TmotionsAssignment\BankApis\BankUI\bin\BankUI.dll
+C:\Users\deepak.dhiman\Documents\GitHub\TmotionsAssignment\BankApis\BankUI\bin\BankUI.pdb
+C:\Users\deepak.dhiman\Documents\GitHub\TmotionsAssignment\BankApis\BankUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\deepak.dhiman\Documents\GitHub\TmotionsAssignment\BankApis\BankUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\deepak.dhiman\Documents\GitHub\TmotionsAssignment\BankApis\BankUI\obj\Debug\BankUI.csprojResolveAssemblyReference.cache
+C:\Users\deepak.dhiman\Documents\GitHub\TmotionsAssignment\BankApis\BankUI\obj\Debug\BankUI.csproj.CoreCompileInputs.cache
+C:\Users\deepak.dhiman\Documents\GitHub\TmotionsAssignment\BankApis\BankUI\obj\Debug\BankUI.dll
+C:\Users\deepak.dhiman\Documents\GitHub\TmotionsAssignment\BankApis\BankUI\obj\Debug\BankUI.pdb

@@ -10,3 +10,14 @@ D:\AmarjitGitHub\TmotionsAssignment\BankApis\Banking Solutions\obj\Debug\Banking
 D:\AmarjitGitHub\TmotionsAssignment\BankApis\Banking Solutions\obj\Debug\Banking Solutions.csproj.CopyComplete
 D:\AmarjitGitHub\TmotionsAssignment\BankApis\Banking Solutions\obj\Debug\Banking Solutions.dll
 D:\AmarjitGitHub\TmotionsAssignment\BankApis\Banking Solutions\obj\Debug\Banking Solutions.pdb
+C:\Users\deepak.dhiman\Documents\GitHub\TmotionsAssignment\BankApis\Banking Solutions\bin\Debug\Banking Solutions.dll.config
+C:\Users\deepak.dhiman\Documents\GitHub\TmotionsAssignment\BankApis\Banking Solutions\bin\Debug\Banking Solutions.dll
+C:\Users\deepak.dhiman\Documents\GitHub\TmotionsAssignment\BankApis\Banking Solutions\bin\Debug\Banking Solutions.pdb
+C:\Users\deepak.dhiman\Documents\GitHub\TmotionsAssignment\BankApis\Banking Solutions\bin\Debug\EntityFramework.dll
+C:\Users\deepak.dhiman\Documents\GitHub\TmotionsAssignment\BankApis\Banking Solutions\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\deepak.dhiman\Documents\GitHub\TmotionsAssignment\BankApis\Banking Solutions\bin\Debug\EntityFramework.xml
+C:\Users\deepak.dhiman\Documents\GitHub\TmotionsAssignment\BankApis\Banking Solutions\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\deepak.dhiman\Documents\GitHub\TmotionsAssignment\BankApis\Banking Solutions\obj\Debug\Banking Solutions.csprojResolveAssemblyReference.cache
+C:\Users\deepak.dhiman\Documents\GitHub\TmotionsAssignment\BankApis\Banking Solutions\obj\Debug\Banking Solutions.csproj.CoreCompileInputs.cache
+C:\Users\deepak.dhiman\Documents\GitHub\TmotionsAssignment\BankApis\Banking Solutions\obj\Debug\Banking Solutions.dll
+C:\Users\deepak.dhiman\Documents\GitHub\TmotionsAssignment\BankApis\Banking Solutions\obj\Debug\Banking Solutions.pdb
